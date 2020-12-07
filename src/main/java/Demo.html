@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实例</title>
+    <link rel="stylesheet" type="text/css" href="style002.css">
+    <script>
+        function Click(){
+            document.getElementById("ClickDo").style.color="sky-blue";
+        }
+
+    </script>
+</head>
+<body>
+<h1>这是一次测试</h1>
+<div class="first-1">
+    <h1>HELLO</h1>
+    <h4>作者：深瞳</h4>
+    <p>这是个盒子模型，运用了HTML和CSS的知识创建，里面含有很多其他知识，比如对图像的理解，页面设计等。
+        这些知识想要掌握好，需要经过很久的训练，对各种标签和属性都了解</p>
+    <!--照片丢失-->
+    <img src="002.png">
+</div>
+<div>
+    <div>
+        <form>
+            姓名：<input type="text" style="background-color: transparent; border:0px;"><br>
+            密码：<input type="password"><br>
+            学号：<input type="text" ><br>
+            性别：<input type="radio" name="1">男
+            <input type="radio" name="1">女
+            <br>
+            专业信息：<input type="checkbox">17级
+            <input type="checkbox">滨江校区
+            <input type="checkbox">信工专业
+            <br>
+        </form>
+        所属单位：
+        <select>
+            <option>信息学院</option>
+            <option>护理学院</option>
+            <option>影像学院</option>
+            <option>体育学院</option>
+            <option>药学院</option>
+        </select>
+    </div>
+</div>
+
+<div>
+    <form action="http://localhost:8080/hello/login" method="post" enctype="multipart/form-data">
+
+        username:<input type="text" name="username" /><br>
+
+        password:<input type="password" name="password" /> <br>
+
+        <input type="text" name="personList[0].name" /> <br>
+        <input type="text" name="personList[1].name" /> <br>
+
+        <input type="file" name="files" /> <br>
+
+        <input type="submit" value="登录">
+
+    </form>
+</div>
+
+<div class="first-2">
+    <h2>这里可能用来有透明色</h2>
+    <p>这是一个用来判断是否是透明色的盒子</p>
+</div>
+<div>
+    <table border="1px">
+        <caption>统计表</caption>
+        <tr>
+            <th>name</th>
+            <th>id</th>
+            <th>age</th>
+            <th>project</th>
+        </tr>
+        <tr>
+            <td>曹宇航</td>
+            <td>001</td>
+            <td>21</td>
+            <td>math</td>
+        </tr>
+        <tr>
+            <td>程昊男</td>
+            <td>004</td>
+            <td>22</td>
+            <td>english</td>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>005</td>
+            <td>22</td>
+            <td>chinese</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>008</td>
+            <td>38</td>
+            <td>cs</td>
+        </tr>
+    </table>
+    <div class="first-3">
+        <button onclick="btn()">点击！</button>
+        <h2 id="btt">这是一个标题</h2>
+    </div>
+</div>
+<script>
+    function btn(){
+        var s=document.getElementById("btt");
+        s.innerHTML="内容和样式已经改变";
+        s.style.color="yellow";
+    }
+</script>
+</body>
+</html>
