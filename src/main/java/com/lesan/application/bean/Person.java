@@ -52,6 +52,16 @@ public class Person {
     }
 
     @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", userId=" + userId +
+                ", sex=" + sex +
+                '}';
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(id, name, userId, sex);
     }

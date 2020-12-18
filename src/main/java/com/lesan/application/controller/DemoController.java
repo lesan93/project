@@ -1,5 +1,6 @@
 package com.lesan.application.controller;
 
+import com.lesan.application.bean.Person;
 import com.lesan.application.bean.User;
 import com.lesan.application.dao.UserMapper;
 import io.swagger.annotations.Api;
@@ -53,6 +54,14 @@ public class DemoController implements ApplicationContextAware {
         /*String name = user.getPersonList().get(0).getName();
         System.out.println(user.getPersonList().size());*/
         return user;
+    }
+
+    @PostMapping(path = "/demo1")
+    @ResponseBody
+    public String demo1(Person person,String id) {
+        System.out.println(person);
+        System.out.println(id);
+        return "hello demo";
     }
 
     @Override
